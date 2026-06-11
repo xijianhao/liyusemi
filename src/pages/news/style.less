@@ -1,0 +1,32 @@
+.news{
+  &-content{
+    margin: 10px 0 60px 0;
+  }
+  &-card{
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 4px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    &-title{
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+    &-content{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+    }
+  }
+  &-card:hover{
+    background:#eee;
+  }
+}
